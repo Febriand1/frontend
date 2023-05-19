@@ -1,6 +1,6 @@
 function deleteData(IDHAPUS) {
   //   var presensiId = document.querySelector("a[data-presensi-id]").getAttribute("data-presensi-id");
-  //   console.log(presensiId);
+
   var presensiId = IDHAPUS;
   console.log(IDHAPUS);
   var target_url = "https://ws-nilai.herokuapp.com/delete/" + presensiId;
