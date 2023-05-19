@@ -1,4 +1,4 @@
-import { postData } from "https://bukulapak.github.io/api/process.js";
+import { putData } from "https://bukulapak.github.io/api/process.js";
 import { onClick, getValue } from "https://bukulapak.github.io/element/process.js";
 import { urlPUT, AmbilResponse } from "../config/url_put.js";
 
@@ -7,7 +7,7 @@ function pushData() {
 
   let data = {
     longitude: parseFloat(getValue("longitude")),
-    latitude: parseFloat(getValue("latitude")), 
+    latitude: parseFloat(getValue("latitude")),
     location: getValue("location"),
     phone_number: getValue("phone_number"),
     checkin: getValue("checkin"),
@@ -24,7 +24,7 @@ function pushData() {
       hari_kerja: hari_kerja.split(","),
     },
   };
-  postData(urlPUT, data, AmbilResponse);
+  putData(urlPUT, data, AmbilResponse);
 }
 
 onClick("button", pushData);
