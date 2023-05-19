@@ -2,7 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const presensiId = urlParams.get("presensiId");
 
-export let urlFetch = "https://ws-nilai.herokuapp.com/upd/" + presensiId;
+export let urlPUT = "https://ws-nilai.herokuapp.com/upd/" + presensiId;
 
 export function AmbilResponse(result) {
   console.log(result); //menampilkan response API pada console
